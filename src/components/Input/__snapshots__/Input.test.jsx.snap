@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Default type 1`] = `
+<DocumentFragment>
+  .c0 {
+  placeholder: Placehoder text;
+  width: 100%;
+  width: 100%;
+  outline: none;
+  color: black;
+  padding: sm;
+  font-size: md;
+  border-color: border;
+  -webkit-transition: default;
+  transition: default;
+  border-radius: default;
+  border: default;
+  height: lg;
+}
+
+.c0 on-change:function mockConstructor(_a) {
+  return: fn.apply(this,arguments);
+}
+
+<input
+    class="c0"
+    placeholder="Placehoder text"
+    value=""
+  />
+</DocumentFragment>
+`;

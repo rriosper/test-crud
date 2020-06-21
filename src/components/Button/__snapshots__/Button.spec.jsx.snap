@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Handlers 1`] = `
+<DocumentFragment>
+  .c1 {
+  padding: xs;
+  background-color: primary;
+  outline: none;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  border-radius: default;
+  type: button;
+  background-color: primary;
+  children: My button!;
+  min-height: lg;
+  min-width: lg;
+  font-size: md;
+}
+
+.c1 svg {
+  fill: white;
+}
+
+.c1 svg:first-child:first-child {
+  margin-right: xs;
+}
+
+.c1 on-click:function mockConstructor() {
+  return: fn.apply(this,arguments);
+}
+
+.c1 svg {
+  width: sm;
+  height: sm;
+}
+
+.c0 {
+  border-radius: default;
+  -webkit-transition: default;
+  transition: default;
+  opacity: 0.8;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.c0:hover {
+  box-shadow: default;
+  opacity: 1;
+}
+
+<div
+    class="c0"
+  >
+    <button
+      class="c1"
+      type="button"
+    >
+      My button!
+    </button>
+  </div>
+</DocumentFragment>
+`;

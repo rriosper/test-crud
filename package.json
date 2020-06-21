@@ -1,0 +1,82 @@
+{
+  "name": "test-crud",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.10.1",
+    "@testing-library/react": "^10.2.1",
+    "@testing-library/user-event": "^7.1.2",
+    "@xstyled/styled-components": "^1.17.1",
+    "@xstyled/system": "^1.17.1",
+    "formik": "^2.1.4",
+    "intersection-observer": "^0.10.0",
+    "polished": "^3.6.5",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.27.0",
+    "ramdu": "^0.0.16",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-intersection-observer": "^8.26.2",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "reakit": "^1.1.0",
+    "redux": "^4.0.5",
+    "reduxt": "^0.0.3",
+    "reselect": "^4.0.0",
+    "styled-components": "^5.1.1",
+    "styled-icons": "^10.2.1",
+    "styled-normalize": "^8.0.7"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "test:ci": "react-app-rewired test --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "eslint src",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-create-react-app": "^3.0.1",
+    "@storybook/react": "^5.3.19",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jest": "^23.13.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "husky": "^4.2.5",
+    "jest-styled-components": "^7.0.2",
+    "prettier": "^2.0.5",
+    "react-app-rewired": "^2.1.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && prettier --write src && git add .",
+      "pre-push": "npm run test:ci"
+    }
+  }
+}
