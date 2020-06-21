@@ -44,6 +44,7 @@ const getUserCards = (users, { type }) =>
   )(users);
 
 let isRequesting = false;
+let timer = null;
 
 const UsersGrid = () => {
   const ref = useRef();
@@ -64,7 +65,10 @@ const UsersGrid = () => {
       window.innerHeight + window.scrollY >= document.body.offsetHeight &&
       !isRequesting
     ) {
-      loadUsers();
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        loadUsers();
+      }, 800);
     }
   }
 
